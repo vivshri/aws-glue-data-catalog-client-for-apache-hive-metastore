@@ -14,6 +14,9 @@ This package is compatible with Spark 3 and Hive 3.
 
 This repository assumes you're working with a patched version of Hive, already prepared for Glue compatibility. The [vivshri/hive-glue-catalog-patch](https://github.com/vivshri/hive-glue-catalog-patch) repository provides those patches for Hive 2.3 and 3.1.
 
+### ⚠️ Ensure Java 8 is used and the latest version of Maven
+All builds and installations **must** use Java 8 (OpenJDK 1.8) and Maven version 3.9.9 or above
+
 ### Step 1: Clone the Patched Hive Repository
 
 ```bash
@@ -40,9 +43,6 @@ mvn clean install -DskipTests
 ```
 
 This installs Hive version `3.1.3-glue-1`.
-
-### ⚠️ Ensure Java 8 is used and the latest version of Maven
-All builds and installations **must** use Java 8 (OpenJDK 1.8) and Maven version 3.9.9 or above
 
 ---
 
